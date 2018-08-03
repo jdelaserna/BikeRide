@@ -15,6 +15,7 @@
 		6F163F1820D08A0F0065BC1C /* BikeRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F163F1720D08A0F0065BC1C /* BikeRide.swift */; };
 		6F163F1C20D1C8150065BC1C /* BikeRideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F163F1B20D1C8150065BC1C /* BikeRideTableViewCell.swift */; };
 		6F20199020D9E62E005BBF4C /* BikeRideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F20198F20D9E62E005BBF4C /* BikeRideDetailViewController.swift */; };
+		6F2EE5142107D025003A0CA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2EE5132107D025003A0CA7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6F163F1720D08A0F0065BC1C /* BikeRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRide.swift; sourceTree = "<group>"; };
 		6F163F1B20D1C8150065BC1C /* BikeRideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRideTableViewCell.swift; sourceTree = "<group>"; };
 		6F20198F20D9E62E005BBF4C /* BikeRideDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRideDetailViewController.swift; sourceTree = "<group>"; };
+		6F2EE5132107D025003A0CA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2EE5142107D025003A0CA7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				6F163F0420D083F60065BC1C /* BikeRide */,
 				6F163F0320D083F60065BC1C /* Products */,
+				6F2EE5122107D025003A0CA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				6F163F1120D083F80065BC1C /* Info.plist */,
 			);
 			path = BikeRide;
+			sourceTree = "<group>";
+		};
+		6F2EE5122107D025003A0CA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F2EE5132107D025003A0CA7 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +117,11 @@
 				TargetAttributes = {
 					6F163F0120D083F60065BC1C = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

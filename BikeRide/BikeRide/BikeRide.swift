@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 
 class BikeRide {
     
@@ -15,12 +16,16 @@ class BikeRide {
     var people: String
     var rating: String
     var level: String
+    var source: CLLocationCoordinate2D
+    var destination: CLLocationCoordinate2D
     
-    init(title: String, map: String, people: String, rating: String, level: String) {
+    init(title: String, map: String, people: String, rating: String, level: String, source: CLLocationCoordinate2D, destination: CLLocationCoordinate2D) {
         self.title = title
         self.map = map
         self.people = people
         self.rating = rating
         self.level = level
+        self.source = source
+        self.destination = destination
     }
 }
